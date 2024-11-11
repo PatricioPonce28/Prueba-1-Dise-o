@@ -187,9 +187,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 130vh;
     background-image: url('Imágenes Poli Trade/fondo-frame2.jpg') ;
     background-size: cover;
+    gap: 15px;
+    background-position: center;
+    padding: 20px;
+    border-radius: 10px;
   }
 
   .Sección_2 {
@@ -204,10 +208,10 @@
     
 
   }
-  h1 {
+  h2 {
     margin-bottom: 50px;
     height: 100px;
-    font-size: 29px;
+    font-size: 50px;
     font-weight: normal;
   }
   
@@ -243,3 +247,125 @@
   .tarjeta button:hover {
     background-color: #fcfdff;
   }
+
+
+
+  /* Diseño de la sección */
+body {
+  background-color: black;
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  /* Contenedor principal -------------------------------------------*/
+  .container {
+    background-image: url('Imágenes Poli Trade/fondo.png'); 
+    text-align: center;
+    color: #fff;
+    padding: 60px;
+}
+
+.carousel {
+    position: relative;
+    max-width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.carousel-item {
+    display: none;
+    transition: opacity 0.5s ease;
+}
+.carousel-item img {
+    width: 100%; 
+    max-width: 500px; 
+    height: auto; 
+}
+
+.carousel-item.active {
+    display: block;
+
+}
+.h2c{
+    padding: 60px;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #e21c1c;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.carousel-button.left {
+    left: 10px;
+
+}
+
+.carousel-button.right {
+    right: 10px;
+}
+
+/* Comentarios */
+
+/* Estilos para la sección de comentarios */
+.fondocomentarios {
+    padding: 70px;
+    text-align: center;
+    position: relative;
+    
+}
+
+/* Estilos para el título */
+.h2c {
+    font-size: 40px;
+    
+}
+
+.fondocomentarios h4 {
+    font-weight: normal;
+    font-size: 15px;
+    color: #ccc;
+    margin-top: 10px;
+
+}
+
+/* Estilos para los comentarios */
+.comments {
+
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.comment {
+    width: 30%;
+    font-size:  20px;;
+    color: white;
+    line-height: 1.6;
+    text-align: left;
+}
+
+/* Estilos para el fondo con ondas */
+.fondocomentarios::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('Imágenes Poli Trade/fondo.png'); 
+    background-size: cover;
+
+    z-index: -1;
+}
