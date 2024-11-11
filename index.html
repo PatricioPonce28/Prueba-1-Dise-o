@@ -72,7 +72,10 @@
     <!-- Secciones adicionales para contenido futuro -->
     <section id="section-1" class="frame_2">
         <!-- Contenido para la Sección 1 -->
+
         <div class="Sección_2">
+            <!-- Primera fila de tarjetas -->
+               
             <img class="logo_principal" src="Imágenes Poli Trade/Logo 2.png" alt="logo_rojo" width="50px" height="50px" > 
             <h1 >"Si lo estás buscando, aquí lo encontrarás."</h1>
             <div class="libros_cajon">
@@ -89,17 +92,93 @@
                 <button>Variado</button>
               </div>
             </div>
-          </div>
+
+          
+          <!--------------------->
+      
+                
+                <!-- Segunda fila de tarjetas -->
+                <div class="libros_cajon">
+                    <div class="tarjeta">
+                        <img src="https://maviju.com/product/image/medium/he040008_0.jpg" alt="Herramientas">
+                        <button>Herramientas</button>
+                    </div>
+                    <div class="tarjeta">
+                        <img src="https://cards.algoreducation.com/_next/image?url=https%3A%2F%2Ffiles.algoreducation.com%2Fproduction-ts%2F__S3__08e180ec-26eb-47bf-8474-8de19eac3aec&w=3840&q=75" alt="Tecnología">
+                        <button>Tecnología</button>
+                    </div>
+                    <div class="tarjeta">
+                        <img src="https://mandolina.co/wp-content/uploads/2020/11/postre-de-oreo.jpg" alt="Postres">
+                        <button>Postres</button>
+                    </div>
+                    <div class="tarjeta">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-sO83wx_F99JBOcZpy3ZS9tpevm7eUzLpBQ&s" alt="Accesorios">
+                        <button>Accesorios</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
 
     </section>
+  
 
-    <section id="section-2" class="section">
-        <!-- Contenido para la Sección 2 -->
+    <section class="container">
+        <h2>Ofertas</h2>
+        <div class="carousel">
+            <button class="carousel-button left" onclick="prevSlide()">❮</button>
+            <div class="carousel-item active">
+                <img src="Imágenes Poli Trade/audifono.PNG" alt="Oferta 1" style="width: 100%;">
+            </div>
+            <div class="carousel-item">
+                <img src="Imágenes Poli Trade/esfot.jpeg" alt="Oferta 2" style="width: 100%;">
+            </div>
+            <div class="carousel-item">
+                <img src="Imágenes Poli Trade/parlante.png" alt="Oferta 3" style="width: 100%;">
+            </div>
+            <div class="carousel-item">
+                <img src="Imágenes Poli Trade/Logo1.PNG" alt="Oferta 4" style="width: 100%;">
+            </div>
+            <button class="carousel-button right" onclick="nextSlide()">❯</button>
+        </div>
     </section>
 
+<section class="fondocomentarios">
+     <h2 class="h2c">Comentarios</h2>
+     <h4>Lo que dicen los estudiantes</h4>
+    <div class="comments">
+        
+        <div class="comment">"Cuando eres miembro, obtienes acceso especial a los últimos lanzamientos. Estás en el lugar correcto."      - Estudiante de mecánica</div>
+        <div class="comment">"Descuentos y ofertas especiales. Aparecen en cualquier momento. Así que aprovecha."     Estudiante de química</div>
+        <div class="comment">"La App tiene todo lo que necesitas para ponerte en movimiento."    - Estudiante de diseño</div>
+    </div>
+</section>
+    <script>
+       
+        let currentSlide = 0;
+        const slides = document.querySelectorAll(".carousel-item");
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.toggle("active", i === index);
+            });
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+            showSlide(currentSlide);
+        }
+    </script>
+
+   </section>
     <section id="section-3" class="section">
         <h1>Hola</h1>
-    </section>
+  
 
 </body>
 </html>
