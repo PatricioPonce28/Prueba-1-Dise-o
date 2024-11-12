@@ -181,7 +181,6 @@
     opacity: 1;
 }
 
-/* diseño seccion-1*/
 .frame_2 {
     font-family: Arial, sans-serif;
     display: flex;
@@ -204,7 +203,6 @@
   .logo_principal{
     display: flex;
     margin-left:1100px ;
-    
     
 
   }
@@ -249,8 +247,6 @@
   }
 
 
-
-  /* Diseño de la sección */
 body {
   background-color: black;
   color: white;
@@ -262,8 +258,7 @@ body {
     font-family: Arial, sans-serif;
     text-align: center;
   }
-  
-  /* Contenedor principal -------------------------------------------*/
+
   .container {
     background-image: url('Imágenes Poli Trade/fondo.png'); 
     text-align: center;
@@ -316,9 +311,7 @@ body {
     right: 10px;
 }
 
-/* Comentarios */
 
-/* Estilos para la sección de comentarios */
 .fondocomentarios {
     padding: 70px;
     text-align: center;
@@ -326,7 +319,6 @@ body {
     
 }
 
-/* Estilos para el título */
 .h2c {
     font-size: 40px;
     
@@ -340,7 +332,6 @@ body {
 
 }
 
-/* Estilos para los comentarios */
 .comments {
 
     display: flex;
@@ -356,7 +347,6 @@ body {
     text-align: left;
 }
 
-/* Estilos para el fondo con ondas */
 .fondocomentarios::before {
     content: '';
     position: absolute;
@@ -373,7 +363,19 @@ body {
 
 footer{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    padding: 20px;
+    background-color: #222
+}
+
+.fooder-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
+    gap: 20px; 
 }
 
 body {
@@ -426,6 +428,5 @@ body {
     padding: 10px 20px;
     border: none;
     cursor: pointer;
-    
   }
 
