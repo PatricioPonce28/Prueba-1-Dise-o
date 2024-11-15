@@ -502,3 +502,77 @@ body {
     }
 }
 
+@media (max-width: 100px) {
+    .header {
+        flex-direction: column;
+        padding: 10px;
+        justify-content: space-around;
+    }
+   
+    
+    .header .logo img {
+        width: 45px;
+    }
+
+    .hero-logo img {
+        width: 80px;
+    }
+    
+    .nav-links {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .main-content {
+        margin-top: 80px;
+    }
+    
+    .tarjetaCarrusel {
+        background-size: cover;
+        height: 200px;
+    }
+
+    .carousel-item img {
+        max-width: 50%;
+    }
+
+    .libros_cajon {
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    .tarjeta {
+        width: auto;
+        height: auto;
+        max-width: 25px;
+    }
+
+
+    .comments {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .comment {
+        width: 100%;
+    }
+
+    .fooder-container {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 100px) {
+    .hero-text h1 {
+        font-size: 1.5em;
+    }
+    
+    .hero-button button {
+        padding: 8px 15px;
+        font-size: 1em;
+    }
+    
+    .carousel-item img {
+        max-width: 50%;
+    }
+}
