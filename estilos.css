@@ -40,10 +40,12 @@ body {
 
 .main-content {
     position: relative;
-    height: 100vh;
+    height: 90vh; 
+    width: 100%;
     margin-top: 60px;
     overflow: hidden;
 }
+
 
 #conteItemsCarrusel {
     height: 100%;
@@ -92,21 +94,21 @@ body {
     text-align: center;
     color: white;
     padding: 2rem;
-    max-width: 800px;
+    max-width: 700px;
 }
 
 .hero-logo img {
-    width: 100px;
+    width: 80px;
     margin-bottom: 2rem;
 }
 
 .hero-text h1 {
-    font-size: 3rem;
+    font-size: 2.2rem;
     margin-bottom: 1rem;
 }
 
 .hero-text h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-bottom: 1.5rem;
     font-weight: normal;
 }
@@ -114,7 +116,7 @@ body {
 .hero-text h3 {
     font-size: 24px;
     line-height: 1.6;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     font-weight: normal;
 }
 
