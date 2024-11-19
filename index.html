@@ -79,15 +79,16 @@
                 </div>
                 
                 <div class="hero-button">
-                    <button>Regístrate</button>
+                    <a href="#section-111" class="register-button">Regístrate</a>
                 </div>
             </div>
         </div>
     </div>
                     
                 <div class="hero-button">
-                    <button onclick="window.location.href='#'">Regístrate</button>
+                    <button onclick="window.location.href=<a href='#section-111" class="register-button">Regístrate</button>
                 </div>
+              
             </div>
         </div>
     </main>
@@ -229,7 +230,7 @@
     </section>
   
 
-    <section class="container">
+    <section class="container" id="section-4">
         <h2>Ofertas</h2>
         <div class="carousel">
             <button class="carousel-button left" onclick="prevSlide()">❮</button>
@@ -267,6 +268,7 @@
     </div>
 
 <!------>
+
 <section class="agregar-comentario">
     <h2 class="h2co">Agregar un Comentario</h2>
     <form id="comentario-form">
@@ -315,48 +317,40 @@
 
    </section>
 
-   <section class="footer">
-    <header>
-        <h2>Poli - Trade</h2>
-    </header>
+   <footer class="footer" id="section-3">
+    <div class="footer-container">
+        <h2 class="footer-title">Poli - Trade</h2>
 
-    <nav class="nav">
-        <a href="https://www.facebook.com/fepon.epn/">Todos  |</a>
-        <a href="https://www.cec-epn.edu.ec/">  News</a>
-    </nav>
-
-    <address class="ubicacion">
-        <h1> Ubicación </h1>
-        <div class= "map-container" >
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d832.933754047865!2d-78.48824525920006!3d-0.21014239661929213!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d59b67172d9b8d%3A0xb37ba37dd2b30d3f!2sComercio%20Electr%C3%B3nico%20EPN%20ESFOT!5e0!3m2!1sen!2sec!4v1731953201979!5m2!1sen!2sec" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        <a href="https://api.whatsapp.com/send?phone=593999846455&text=Hola,%20quiero%20más%20información"><p>     
-            <div class= "qr-code" >
-                <img src="Imágenes Poli Trade/qr.jpg" alt="Código QR" height=250px>
+        <div class="location-section">
+            <h3 class="location-title">Ubicación</h3>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7967116921007!2d-78.49088868524688!3d-0.2080425998466082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d59bd8f6c4d1d7%3A0x6c0c0c0c0c0c0c0c!2sEscuela%20Polit%C3%A9cnica%20Nacional!5e0!3m2!1ses!2sec!4v1621234567890!5m2!1ses!2sec" allowfullscreen="" loading="lazy"></iframe>
             </div>
-        </a>
-    </address>
+        </div>
 
-    <ul class="redes-sociales">
-        <a href="https://www.facebook.com/profile.php?id=61568182606659"><img src="Imágenes Poli Trade/facebook.avif" alt="Facebook" height=90px ></a>
-        <a href="https://www.instagram.com/alisson_vc25/profilecard/?igsh=MTU2ZDhjZ3hkdWliNQ=="><img src = "Imágenes Poli Trade/ins.png" height=90px alt = "Instagram"></a>
-        <a href="https://api.whatsapp.com/send?phone=593999846455&text=Hola,%20quiero%20más%20información"><img src="Imágenes Poli Trade/wha.jpg" height=90px alt="WhatsApp"></a>
-    </ul>
+        <div class="social-section">
+            <img src="Imágenes Poli Trade/qr.jpg" alt="QR Code" class="qr-code">
+            <div class="social-links">
+                <a href="#"><img src="Imágenes Poli Trade/facebook.avif" alt="Facebook"></a>
+                <a href="#"><img src="Imágenes Poli Trade/ins.png" alt="Instagram"></a>
+                <a href="#"><img src="Imágenes Poli Trade/wha.jpg" alt="WhatsApp"></a>
+            </div>
+        </div>
 
-    <form class="formulario" action="enviar formulario.php" method="post">
-        <h1>Formulario</h1>
-        <input type="Text" name = "nombre" placeholder="Nombre: ">
-        <input type="Text" name = "apellido" placeholder="Apellido: ">
-        <input type="telefono" name = "telefono" placeholder="Telefono: ">
-        <input type="email" name = "correo" placeholder="Correo Electronico: ">
-        <button type = "submit">Enviar</button>
-    </form>
-            
-    <p class="copy">
-        &copy; 2024 Poli-Trade. Todos los derechos reservados.    
-    </p>
+        <div class="contact-form" id="section-111">
+            <h3>Formulario</h3>
+            <form>
+                <input type="text" placeholder="Nombre">
+                <input type="email" placeholder="Email">
+                <input type="text" placeholder="Mensaje">
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
 
-    </section>
-
+        <div class="footer-bottom">
+            © 2024 Poli-Trade. Todos los derechos reservados.
+        </div>
+    </div>
+</footer>
 </body>
-</html>
+</html> 
