@@ -527,6 +527,152 @@ body {
     z-index: -1;
 }
 
+/* Comentarios */
+
+/* Estilos para la sección de comentarios */
+.fondocomentarios {
+    padding: 70px;
+    text-align: center;
+    position: relative;
+    background-image: url('Imágenes Poli Trade/fondo_comen.PNG');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+
+}
+
+/* Estilos para el título */
+.h2c {
+    font-size: 40px;
+}
+
+.fondocomentarios h4 {
+    font-weight: normal;
+    font-size: 20px;
+    color: #ccc;
+    margin-top: 10px;
+
+}
+
+/* Estilos para los comentarios */
+.comments {
+
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    flex-wrap :wrap;
+}
+
+.comment {
+    width: 30%;
+    font-size:  20px;;
+    color: white;
+    line-height: 1.6;
+    text-align: left;
+}
+
+/* Estilos para el fondo con ondas */
+.fondocomentarios::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('Imágenes Poli Trade/fondo.png'); 
+    background-size: cover;
+
+    z-index: -1;
+}
+
+
+
+
+/* Estilos para el fondo con ondas // Estilos para el fondo con ondas */
+.agregar-comentario textarea {
+    width:70%;
+    height: 60px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ffffff;
+
+}textarea { 
+    margin: 10px auto;
+    width: 60%; /* Reducir el ancho */
+    height: 80px; /* Ajustar la altura */
+    padding: 10px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+
+}
+.agregar-comentario {
+    text-align: center;
+    margin-top: 10px;
+    color: white;
+}
+.agregar-comentario button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Sistema de estrellas */
+.rating {
+    display: flex;
+    justify-content: center;
+    margin: 5px 0; 
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    font-size: 30px;
+    color: gray;
+    cursor: pointer;
+}
+
+.rating input:checked ~ label {
+    color: gold;
+}
+
+.rating input#star-5:checked ~ label,
+.rating input#star-4:checked ~ label,
+.rating input#star-3:checked ~ label,
+.rating input#star-2:checked ~ label,
+.rating input#star-1:checked ~ label {
+    color: gold;
+}
+
+.agregar-comentario h2 {
+    margin-bottom: 5px; /* Reducir la separación con las estrellas */
+    font-size: 24px; /* Tamaño del texto */
+}
+
+.enviarb button{
+    width: 40%; /* Igual que el textarea */
+    padding: 10px;
+    margin: 10px auto; /* Reducir la separación hacia abajo */
+    position: relative;
+    top: -10px; /* Subir el botón */
+    border: none;
+    background-color: #e21c1c;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.enviarb button:hover {
+    background-color: #ad1616;
+}
+
 
 footer{
     display: flex;

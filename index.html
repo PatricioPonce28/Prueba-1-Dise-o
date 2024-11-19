@@ -229,7 +229,7 @@
     </section>
   
 
-    <section id="section-4" class="container">
+    <section class="container">
         <h2>Ofertas</h2>
         <div class="carousel">
             <button class="carousel-button left" onclick="prevSlide()">❮</button>
@@ -245,6 +245,13 @@
             <div class="carousel-item">
                 <img src="Imágenes Poli Trade/reloj_Oferta.PNG" alt="Oferta 4" style="width: 100%;">
             </div>
+            <div class="carousel-item">
+                <img src="Imágenes Poli Trade/Oferta4.jpg" alt="Oferta 4" style="width: 100%;">
+            </div>
+            <div class="carousel-item">
+                <img src="Imágenes Poli Trade/Logo1.PNG" alt="Oferta 4" style="width: 100%;">
+            </div>
+
             <button class="carousel-button right" onclick="nextSlide()">❯</button>
         </div>
     </section>
@@ -258,7 +265,32 @@
         <div class="comment">"Descuentos y ofertas especiales. Aparecen en cualquier momento. Así que aprovecha."     Estudiante de química</div>
         <div class="comment">"La App tiene todo lo que necesitas para ponerte en movimiento."    - Estudiante de diseño</div>
     </div>
+
+<!------>
+<section class="agregar-comentario">
+    <h2 class="h2co">Agregar un Comentario</h2>
+    <form id="comentario-form">
+        <div class="rating">
+            <input type="radio" id="star-5" name="rating" />
+            <label for="star-5">★</label>
+            <input type="radio" id="star-4" name="rating" />
+            <label for="star-4">★</label>
+            <input type="radio" id="star-3" name="rating" />
+            <label for="star-3">★</label>
+            <input type="radio" id="star-2" name="rating" />
+            <label for="star-2">★</label>
+            <input type="radio" id="star-1" name="rating" />
+            <label for="star-1">★</label>
+        </div>
+        <textarea name="comentario" id="comentario" placeholder="Escribe tu comentario aquí..." required></textarea>
+        <div class="enviarb"> <button  type="submit" >Enviar</button></div>
+       
+    </form>
 </section>
+
+</section>
+
+
     <script>
        
         let currentSlide = 0;
