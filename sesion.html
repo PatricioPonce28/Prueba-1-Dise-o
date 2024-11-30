@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión - Poli Trade</title>
+    <link rel="stylesheet" href="sesion.css">
+</head>
+<body>
+        <div class="container">
+            <div class="form-header">
+                <img src="Imágenes Poli Trade/Logo1.png" alt="Poli Trade Logo">
+                <h1>Bienvenido</h1>
+                <p>Inicia sesión para acceder a Poli Trade</p>
+            </div>
+    
+            <form onsubmit="event.preventDefault(); showMessageAndRedirect();">
+                <div class="form-group">
+                    <label for="email">Correo Institucional</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="password">Contraseña</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+    
+                <div class="remember-me">
+                    <input type="checkbox" id="remember" name="remember">
+                    <label for="remember">Recordar mi sesión</label>
+                </div>
+    
+                <button type="submit">Iniciar Sesión</button>
+    
+                <div class="form-footer">
+                    <p>¿No tienes una cuenta? <a href="registro.html">Regístrate</a></p>
+                </div>
+            </form>
+        </div>
+    
+        <script>
+            function showMessageAndRedirect() {
+                alert('Has iniciado sesión exitosamente');
+                window.location.href = 'index.html';
+            }
+        </script>
+    </body>
+    </html>
+</body>
+</html>
