@@ -1008,6 +1008,14 @@ body {
         width: 120px;
         font-size: 0.9rem;
     }
+    .comments {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .comment {
+        width: 100%;
+    }
 }
 
 .qr-code {
@@ -1095,3 +1103,6 @@ body {
     cursor: pointer;
   }
   
+  ul{
+    color: #000;
+  }
