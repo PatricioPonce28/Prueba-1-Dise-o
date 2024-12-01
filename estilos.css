@@ -21,6 +21,40 @@ body {
     height: 65px;
 }
 
+.login-btn, .register-btn {
+    padding: 8px 16px;
+    border-radius: 5px;
+}
+
+.login-btn {
+    border: 2px solid #f00;
+}
+
+.login-btn:hover {
+    background-color: #f00;
+    color: white;
+}
+
+.register-btn {
+    background: linear-gradient(45deg, #f00, #ff416c);
+    color: white;
+}
+
+.nav-links {
+    gap: 2rem;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        gap: 1rem;
+    }
+
+    .login-btn, .register-btn {
+        padding: 6px 12px;
+        font-size: 0.9rem;
+    }
+}
 .header .logo img {
     width: 65px;
     height: auto;
