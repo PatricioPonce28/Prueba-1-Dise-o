@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Artículos</title>
+    <link rel="stylesheet" href="articulos.css">
+</head>
+<body>
+    <!-- Encabezado con título principal -->
+    <header>
+        <h1>Catálogo de Artículos</h1>
+        <p>Explora nuestras categorías</p>
+    </header>
+
+    <!-- Contenedor principal de las categorías -->
+    <main>
+        <!-- Categoría de libros -->
+        <section class="categoria" id="libros">
+            <h2>Libros_Ingles (Avanzado, Básico, Inicial)</h2>
+            <img src="img_articulos/edition-158588.jpg" alt="Libros" class="d-block w-100" height="300px">
+            <div class="carrusel" id="librosCarrusel">
+                <div class="carrusel-item active">
+                    <img src="img_articulos/libro_avanzado.webp" alt="Nivel C1" height="270px">
+                    <div class="caption">
+                        <p>Nivel C1</p>
+                        <span>$30</span>
+                    </div>
+                </div>
+                <div class="carrusel-item">
+                    <img src="img_articulos/libro_basico.webp" alt="Nivel B2" height="200px">
+                    <div class="caption">
+                        <p>Nivel B2</p>
+                        <span>$25</span>
+                    </div>
+                </div>
+                <div class="carrusel-item">
+                    <img src="img_articulos/libro_principiante.webp" alt="Nivel Inicial" height="200px">
+                    <div class="caption">
+                        <p>Nivel Inicial</p>
+                        <span>$20</span>
+                    </div>
+                </div>
+                <a class="prev" onclick="plusSlides('librosCarrusel', -1)">&#10094;</a>
+                <a class="next" onclick="plusSlides('librosCarrusel', 1)">&#10095;</a>
+            </div>
+        </section>
+
+        <!-- Categoría de herramientas -->
+        <section class="categoria" id="herramientas">
+            <h2>Herramientas</h2>
+            <img src="img_articulos/herramientas_1.png" alt="Herramientas" class="d-block w-100" height="300px">
+            <div class="carrusel" id="herramientasCarrusel">
+                <div class="carrusel-item active">
+                    <img src="img_articulos/balanza_medicion.jpg" alt="Balanza de Medición" height="200px">
+                    <div class="caption">
+                        <p>Balanza de medición</p>
+                        <span>$40</span>
+                    </div>
+                </div>
+                <div class="carrusel-item">
+                    <img src="img_articulos/cinta_metrica.png" alt="Cinta Métrica" height="200px">
+                    <div class="caption">
+                        <p>Cinta métrica (50km)</p>
+                        <span>$12</span>
+                    </div>
+                </div>
+                <div class="carrusel-item">
+                    <img src="img_articulos/pipeta.png" alt="Pipeta Volumétrica" height="200px">
+                    <div class="caption">
+                        <p>Pipeta volumétrica</p>
+                        <span>$20</span>
+                    </div>
+                </div>
+                <a class="prev" onclick="plusSlides('herramientasCarrusel', -1)">&#10094;</a>
+                <a class="next" onclick="plusSlides('herramientasCarrusel', 1)">&#10095;</a>
+            </div>
+        </section>
+
+        <!-- Categoría de postres -->
+        <section class="categoria" id="postres">
+            <h2>Postres</h2>
+            <img src="img_articulos/postres.png" alt="Postres" class="d-block w-100" height="300px">
+            <div class="carrusel" id="postresCarrusel">
+                <div class="carrusel-item active">
+                    <img src="img_articulos/manzana.png" alt="Manzanas" height="200px">
+                    <div class="caption">
+                        <p>Manzanas (6x2)</p>
+                        <span>$2</span>
+                    </div>
+                </div>
+                <div class="carrusel-item">
+                    <img src="img_articulos/pedidos_personalizados.png" alt="Capuchino Personalizado" height="200px">
+                    <div class="caption">
+                        <p>Capuchino personalizado</p>
+                        <span>$6</span>
+                    </div>
+                </div>
+                <div class="carrusel-item">
+                    <img src="img_articulos/caseros.webp" alt="Helados Caseros" height="200px">
+                    <div class="caption">
+                        <p>Helados caseros</p>
+                        <span>$3</span>
+                    </div>
+                </div>
+                <a class="prev" onclick="plusSlides('postresCarrusel', -1)">&#10094;</a>
+                <a class="next" onclick="plusSlides('postresCarrusel', 1)">&#10095;</a>
+            </div>
+        </section>
+        
+
+        <!-- Categoría de tecnología -->
+        <section class="categoria" id="tecnologia">
+            <h2>Tecnología</h2>
+            <img src="img_articulos/tecnologia.webp" alt="Tecnología" class="d-block w-100" height="300px">
+            <div class="carrusel" id="tecnologiaCarrusel">
+                <div class="carrusel-item active">
+                    <img src="img_articulos/calculadora.jpg" alt="Calculadora Científica" height="200px">
+                    <div class="caption">
+                        <p>Calculadora científica</p>
+                        <span>$40</span>
+                    </div>
+                </div>
+                <div class="carrusel-item">
+                    <img src="img_articulos/audifonos.webp" alt="Audífonos" height="200px">
+                    <div class="caption">
+                        <p>Audífonos</p>
+                        <span>$12</span>
+                    </div>
+                </div>
+                <div class="carrusel-item">
+                    <img src="img_articulos/cargadores.png" alt="Cargadores" height="200px">
+                    <div class="caption">
+                        <p>Cargadores</p>
+                        <span>$20</span>
+                    </div>
+                </div>
+                <div class="carrusel-item">
+                    <img src="img_articulos/electronica.jpg" alt="Componentes Electrónicos" height="200px">
+                    <div class="caption">
+                        <p>Componentes electrónicos</p>
+                        <span>$10</span>
+                    </div>
+                </div>
+                <a class="prev" onclick="plusSlides('tecnologiaCarrusel', -1)">&#10094;</a>
+                <a class="next" onclick="plusSlides('tecnologiaCarrusel', 1)">&#10095;</a>
+            </div>
+        </section>
+
+        
+        <!-- Categoría de accesorios -->
+        <section class="categoria" id="accesorios">
+            <h2>Accesorios</h2>
+            <img src="img_articulos/accesorios.png" alt="Accesorios" class="d-block w-100" height="300px">
+            <div class="carrusel" id="accesoriosCarrusel">
+                <div class="carrusel-item active">
+                    <img src="img_articulos/esfero.jpg" alt="Esferos Multicolor" height="200px">
+                    <div class="caption">
+                        <p>Esferos Multicolor</p>
+                        <span>$3.50</span>
+                    </div>
+                </div>
+                <div class="carrusel-item">
+                    <img src="img_articulos/escuadras.png" alt="Juego de Escuadras" height="200px">
+                    <div class="caption">
+                        <p>Juego de Escuadras</p>
+                        <span>$3</span>
+                    </div>
+                </div>
+                <div class="carrusel-item">
+                    <img src="img_articulos/mochilas.png" alt="Mochilas" height="200px">
+                    <div class="caption">
+                        <p>Mochilas</p>
+                        <span>$15-20</span>
+                    </div>
+                </div>
+                <a class="prev" onclick="plusSlides('accesoriosCarrusel', -1)">&#10094;</a>
+                <a class="next" onclick="plusSlides('accesoriosCarrusel', 1)">&#10095;</a>
+            </div>
+        </section>
+          <!-- Categoría de variado -->
+          <section class="categoria" id="variado">
+            <h2 class="variado_texto">Variados</h2>
+            <img src="img_articulos/variado.png" alt="Variado" class="d-block w-100" height="300px">
+            <div class="carrusel" id="variadoCarrusel">
+                <div class="carrusel-item active">
+                    <img src="img_articulos/pulseras.webp" alt="pulseras" height="200px">
+                    <div class="caption">
+                        <p>pulserasr</p>
+                        <span>$3.50</span>
+                    </div>
+                </div>
+                <div class="carrusel-item">
+                    <img src="img_articulos/llaveros.jpeg" alt="llaveros" height="200px">
+                    <div class="caption">
+                        <p>llaveros</p>
+                        <span>$3</span>
+                    </div>
+                </div>
+                <div class="carrusel-item">
+                    <img src="img_articulos/gafas.jpg" alt="gafas" height="200px">
+                    <div class="caption">
+                        <p>gafas</p>
+                        <span>$15-20</span>
+                    </div>
+                </div>
+                <div class="carrusel-item">
+                    <img src="img_articulos/collares.jpg" alt="collares" height="200px">
+                    <div class="caption">
+                        <p>collares</p>
+                        <span>$15-20</span>
+                    </div>
+                </div>
+                <a class="prev" onclick="plusSlides('variadoCarrusel', -1)">&#10094;</a>
+                <a class="next" onclick="plusSlides('variadoCarrusel', 1)">&#10095;</a>
+            </div>
+        </section>
+
+
+    </main>
+
+    <!-- Scripts -->
+    <script src="carrusel.js"></script>
+</body>
+</html>

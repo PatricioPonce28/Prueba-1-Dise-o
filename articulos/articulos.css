@@ -1,0 +1,173 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("../Imágenes Poli Trade/fondo-frame2.jpg");
+}
+
+/* Encabezado */
+header {
+    background-image: url("img_articulos/fondo_libros.jpg");
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    margin: 5px 0 0;
+    font-size: 1.2em;
+}
+
+/* Secciones de categorías */
+main {
+    padding: 20px;
+}
+
+.categoria {
+    background-color: white;
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 800px; 
+    text-align: center;
+    color: #333;
+}
+
+.categoria h2 {
+    margin-bottom: 15px;
+    color: #007BFF;
+
+}
+
+.categoria#libros {
+    background-image: url("img_articulos/fondo_libros.jpg");
+    
+}
+
+.carrusel#librosCarrusel{
+    background-image: url("img_articulos/fondo_carrusel_libros.jpg");
+    
+}
+.categoria#herramientas{
+    background-image: url("img_articulos/fondo_herram.jpg");
+}
+.carrusel#herramientasCarrusel{
+    background-image: url("img_articulos/fondo_herram_c.jpg");
+    
+}
+.categoria#tecnologia{
+    background-image: url("img_articulos/fondo_tec.jpg");
+}
+.carrusel#tecnologiaCarrusel{
+    background-image: url("img_articulos/fondo_tec_carrusel.jpg");
+    
+}
+.categoria#postres{
+    background-image: url("img_articulos/fondo_postre.avif");
+}
+.carrusel#postresCarrusel{
+    background-image: url("img_articulos/fondo_postre_c.jpg");
+    
+}
+.categoria#accesorios{
+    background-image: url("img_articulos/fondo_accesorios.avif");
+}
+.carrusel#accesoriosCarrusel{
+    background-image: url("img_articulos/fondo_accesorios_c.avif");
+    
+}
+.categoria#variado{
+    background-image: url("img_articulos/fondo_variado_c.jpg");
+}
+.carrusel#variadoCarrusel{
+    background-image: url("img_articulos/fondo_variado.jpg");
+    
+}
+
+/* Carrusel */
+.carrusel {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carrusel-item {
+    display: none;
+    text-align: center;
+}
+
+.carrusel-item.active {
+    display: block;
+}
+
+.carrusel img {
+    width: 100%;
+    height: 200px; /* Ajusta esta altura según sea necesario */
+    object-fit: contain; /* Ajusta la imagen para que se vea completa dentro del contenedor */
+    object-position: center; /* Centra la imagen dentro del contenedor */
+    border-radius: 5px;
+    
+}
+.carrusel-item.active img {
+    height: 270px;
+    width: auto;
+}
+
+
+.caption {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 8px;
+    color: white;
+    margin-top: 10px;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%; /* Centra las flechas verticalmente */
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    transform: translateY(-50%); /* Ajusta la posición al centro vertical */
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: 0;
+    border-radius: 0 3px 3px 0;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+    .categoria {
+        padding: 15px;
+    }
+
+    .categoria h2 {
+        font-size: 1.5em;
+    }
+}
