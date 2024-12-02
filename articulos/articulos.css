@@ -1,173 +1,192 @@
-/* Estilo general */
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
     padding: 0;
-    background-image: url("../Imágenes Poli Trade/fondo-frame2.jpg");
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Encabezado */
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+                      url('img_articulos/FondoBody.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+}
 header {
-    background-image: url("img_articulos/fondo_libros.jpg");
-    color: white;
     text-align: center;
-    padding: 20px 10px;
+    padding: 50px 20px;
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), 
+               url('img_articulos/fondo_libros.jpg') center/cover;
+    border-bottom: 3px solid #ff0000;
 }
 
 header h1 {
-    margin: 0;
-    font-size: 2.5em;
+    font-size: 3em;
+    margin-bottom: 15px;
+    color: #fff;
 }
 
 header p {
-    margin: 5px 0 0;
+    color: #ff0000;
     font-size: 1.2em;
 }
 
-/* Secciones de categorías */
-main {
+.categoria {
+    max-width: 1200px;
+    margin: 40px auto;
     padding: 20px;
 }
 
-.categoria {
-    background-color: white;
-    margin: 20px auto;
-    padding: 15px;
-    border-radius: 5px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    width: 90%;
-    max-width: 800px; 
+.categoria-titulo {
     text-align: center;
-    color: #333;
+    color: #ff0000;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    text-transform: uppercase;
 }
 
-.categoria h2 {
+.info-container {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 30px;
+    backdrop-filter: blur(10px);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.info-section {
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.info-section h3 {
+    color: #ff0000;
     margin-bottom: 15px;
-    color: #007BFF;
-
+    font-size: 1.5em;
+    text-align: center;
 }
 
-.categoria#libros {
-    background-image: url("img_articulos/fondo_libros.jpg");
-    
+.info-section ul {
+    list-style: none;
 }
 
-.carrusel#librosCarrusel{
-    background-image: url("img_articulos/fondo_carrusel_libros.jpg");
-    
-}
-.categoria#herramientas{
-    background-image: url("img_articulos/fondo_herram.jpg");
-}
-.carrusel#herramientasCarrusel{
-    background-image: url("img_articulos/fondo_herram_c.jpg");
-    
-}
-.categoria#tecnologia{
-    background-image: url("img_articulos/fondo_tec.jpg");
-}
-.carrusel#tecnologiaCarrusel{
-    background-image: url("img_articulos/fondo_tec_carrusel.jpg");
-    
-}
-.categoria#postres{
-    background-image: url("img_articulos/fondo_postre.avif");
-}
-.carrusel#postresCarrusel{
-    background-image: url("img_articulos/fondo_postre_c.jpg");
-    
-}
-.categoria#accesorios{
-    background-image: url("img_articulos/fondo_accesorios.avif");
-}
-.carrusel#accesoriosCarrusel{
-    background-image: url("img_articulos/fondo_accesorios_c.avif");
-    
-}
-.categoria#variado{
-    background-image: url("img_articulos/fondo_variado_c.jpg");
-}
-.carrusel#variadoCarrusel{
-    background-image: url("img_articulos/fondo_variado.jpg");
-    
-}
-
-/* Carrusel */
-.carrusel {
+.info-section li {
+    margin: 10px 0;
+    padding-left: 20px;
     position: relative;
-    width: 100%;
-    max-width: 800px;
-    margin: auto;
+    line-height: 1.6;
+}
+
+.info-section li::before {
+    content: '•';
+    color: #ff0000;
+    position: absolute;
+    left: 0;
+}
+
+.carousel-container {
+    position: relative;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 15px;
     overflow: hidden;
 }
 
-.carrusel-item {
-    display: none;
-    text-align: center;
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 400px;
 }
 
-.carrusel-item.active {
+.carousel-item {
+    display: none;
+    text-align: center;
+    width: 100%;
+    animation: fadeEffect 0.5s;
+}
+
+.carousel-item.active {
     display: block;
 }
 
-.carrusel img {
-    width: 100%;
-    height: 200px; /* Ajusta esta altura según sea necesario */
-    object-fit: contain; /* Ajusta la imagen para que se vea completa dentro del contenedor */
-    object-position: center; /* Centra la imagen dentro del contenedor */
-    border-radius: 5px;
-    
-}
-.carrusel-item.active img {
-    height: 270px;
-    width: auto;
+.carousel-item img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
 }
 
-
-.caption {
-    background: rgba(0, 0, 0, 0.5);
-    padding: 10px;
-    border-radius: 8px;
-    color: white;
-    margin-top: 10px;
+.carousel-item img:hover {
+    transform: scale(1.05);
 }
 
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%; /* Centra las flechas verticalmente */
-    width: auto;
-    padding: 16px;
-    color: white;
+.product-info {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.product-info h4 {
+    color: #fff;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.product-info .price {
+    color: #ff0000;
+    font-size: 1.5em;
     font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    transform: translateY(-50%); /* Ajusta la posición al centro vertical */
 }
 
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #ff0000;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1.5em;
+    transition: background 0.3s ease;
+    border: none;
+    z-index: 2;
 }
 
-.prev {
-    left: 0;
-    border-radius: 0 3px 3px 0;
+.carousel-control:hover {
+    background: #cc0000;
 }
 
-.prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
+.prev { left: 20px; }
+.next { right: 20px; }
+
+@keyframes fadeEffect {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
-/* Ajustes responsivos */
 @media (max-width: 768px) {
-    .categoria {
-        padding: 15px;
+    .info-container {
+        grid-template-columns: 1fr;
     }
 
-    .categoria h2 {
-        font-size: 1.5em;
+    .categoria {
+        padding: 10px;
+    }
+
+    .carousel-item img {
+        max-width: 250px;
     }
 }

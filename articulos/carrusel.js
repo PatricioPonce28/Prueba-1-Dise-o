@@ -1,26 +1,43 @@
-function plusSlides(carruselId, n) {
-    let i;
-    let carrusel = document.getElementById(carruselId);
-    let slides = carrusel.getElementsByClassName("carrusel-item");
-    let slideIndex = 0;
+const carouselStates = {
+    libros: 0,
+    herramientas: 0,
+    postres: 0,
+    tecnologia: 0,
+    accesorios: 0,
+    variados: 0
+};
+
+function changeSlide(section, direction) {
+    // Obtener elementos del carrusel
+    const carousel = document.querySelector(`#${section} .carousel`);
+    const slides = carousel.getElementsByClassName('carousel-item');
     
-    for (i = 0; i < slides.length; i++) {
-        if (slides[i].classList.contains("active")) {
-            slideIndex = i;
-            slides[i].classList.remove("active");
-            break;
-        }
+    // Actualizar el índice
+    carouselStates[section] += direction;
+    
+    // Ajustar límites
+    if (carouselStates[section] >= slides.length) {
+        carouselStates[section] = 0;
+    }
+    if (carouselStates[section] < 0) {
+        carouselStates[section] = slides.length - 1;
     }
     
-    slideIndex += n;
-    
-    if (slideIndex >= slides.length) {
-        slideIndex = 0;
+    // Actualizar visibilidad
+    for (let slide of slides) {
+        slide.classList.remove('active');
     }
-    if (slideIndex < 0) {
-        slideIndex = slides.length - 1;
-    }
-    
-    slides[slideIndex].classList.add("active");
+    slides[carouselStates[section]].classList.add('active');
 }
 
+// Inicializar cuando cargue la página
+document.addEventListener('DOMContentLoaded', function() {
+    // Asegurarse de que el primer slide esté activo en cada carrusel
+    const carousels = document.querySelectorAll('.carousel');
+    carousels.forEach(carousel => {
+        const firstSlide = carousel.querySelector('.carousel-item');
+        if (firstSlide) {
+            firstSlide.classList.add('active');
+        }
+    });
+});
