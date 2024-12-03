@@ -1,0 +1,104 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+h1{
+    text-align: center;
+    color: #161515;
+}
+
+h2 {
+    text-align: center;
+    color: #d32f2f;
+}
+
+.header {
+    padding: 20px 0;
+    background: linear-gradient(135deg, #ff5f6d, #d32f2f, #8e0000);
+    color: white;
+}
+
+.historia {
+    background: url('background-historia.jpg') no-repeat center center/cover;
+    color: rgb(19, 18, 18);
+    padding: 40px;
+    text-align: center;
+}
+
+.historia p {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.mision-vision {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px;
+    text-align: center;
+}
+
+.mision, .vision {
+    width: 45%;
+    padding: 20px;
+    border: 2px solid #d32f2f;
+    border-radius: 10px;
+    background-color: rgb(14, 13, 13);
+    background: linear-gradient(135deg, #fa7c87, #d32f2f, #992727);
+
+}
+
+.mision h2, .vision h2 {
+    color: #0c0a0a;
+}
+
+.equipo {
+    padding: 40px;
+    text-align: center;
+}
+
+.equipo-miembros {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.miembro {
+    text-align: center;
+}
+
+.miembro img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer a {
+    color: #d32f2f;
+    text-decoration: none;
+}
+
+.historia, .mision-vision, .equipo {
+    background-color: rgba(255, 255, 255, 0.87); /* Fondo negro semi-transparente */
+    padding: 20px;
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+img {
+    max-width: 300px;
+    margin-bottom: 10px;
+}
+
