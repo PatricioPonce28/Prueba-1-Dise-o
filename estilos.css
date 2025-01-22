@@ -12,7 +12,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
+    background-color: black;
     padding: 10px 20px;
     position: fixed;
     width: 100%;
@@ -668,59 +668,107 @@ body {
     background-color: #ad1616;
 }
 
-.footer {
-    background-color: #000;
-    padding: 3rem 0;
-    color: #fff;
-}
-
-.footer-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-}
-
-.footer-title {
-    font-size: 2rem;
+.location-info {
+    padding: 4rem 2rem;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), 
+                url('Imágenes Poli Trade/fondo_comen.PNG');
+    background-size: cover;
+    background-position: center;
     color: white;
-    margin-bottom: 1rem;
-    text-align: center;
-}
-
-.location-section {
-    width: 100%;
-    max-width: 600px;
-    text-align: center;
 }
 
 .location-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
     color: white;
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
 }
 
-.map-container {
-    width: 100%;
-    height: 300px;
-    border-radius: 10px;
-    overflow: hidden;
-    margin-bottom: 2rem;
-}
-
-.map-container iframe {
-    width: 100%;
-    height: 100%;
-    border: none;
-}
-
-.social-section {
+.location-container {
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
-    flex-direction: column;
+    gap: 3rem;
     align-items: center;
-    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.location-details {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+}
+
+.info-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+}
+
+.location-icon, .time-icon {
+    font-size: 2rem;
+    color: #e21c1c;
+}
+
+.info-content h3 {
+    color: #e21c1c;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.info-content p {
+    color: #fff;
+    margin-bottom: 0.3rem;
+    font-size: 1rem;
+}
+
+.location-map {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+}
+
+.location-map iframe {
+    width: 100%;
+    height: 400px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilos responsive */
+@media (max-width: 768px) {
+    .location-info {
+        padding: 3rem 1rem;
+    }
+
+    .location-title {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .location-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .location-details, .location-map {
+        width: 100%;
+    }
+
+    .location-map iframe {
+        height: 300px;
+    }
+
+    .info-item {
+        padding: 1rem;
+    }
 }
 
 .qr-code {
@@ -1018,88 +1066,38 @@ body {
     }
 }
 
-.qr-code {
-    flex: 0 0 auto; 
-    margin-left: 10px; 
-    align-items: center;
+footer {
+    background: #111;
+    padding: 40px 20px;
+    margin-top: 60px;
 }
 
-.footer{
-    background-image: linear-gradient(1deg, rgba(243, 60, 60, 0.767), transparent 25%, rgba(204, 63, 63, 0.945));
-    flex-direction: column; 
-    align-items: center; 
-    justify-content: center; 
-}
-
-.copy {
+.social-section {
     text-align: center;
-    font-size: 12px;
-    color: #000000;
-    margin-top: 20px;
-  }
-
-.qr-code{
-    background-image: linear-gradient(1deg, rgba(243, 60, 60, 0.767), transparent 25%, rgba(204, 63, 63, 0.945));
+    margin-bottom: 30px;
 }
 
-.redes-sociles{
-    background-image: linear-gradient(1deg, rgba(243, 60, 60, 0.767), transparent 25%, rgba(204, 63, 63, 0.945));
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
-.fooder-container {
-    align-items: center; 
-    text-align: center;
-    gap: 20px; 
-    background-image: linear-gradient(1deg, rgba(243, 60, 60, 0.767), transparent 25%, rgba(204, 63, 63, 0.945));
-    
+.social-links img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
 }
 
-.copy {
-    text-align: center;
-    font-size: 12px;
-    color: #ccc;
-    margin-top: 20px;
-    background-image: linear-gradient(1deg, rgba(243, 60, 60, 0.767), transparent 25%, rgba(204, 63, 63, 0.945)); 
-  }
-  
-  
-  .nav a {
-    color: #000000; 
-    text-decoration: none;
-    margin: 0 5px;
-    background-image: linear-gradient(1deg, rgba(243, 60, 60, 0.767), transparent 25%, rgba(204, 63, 63, 0.945));
-  }
+.social-links img:hover {
+    transform: scale(1.1);
+}
 
-  
-  .social-media a {
-    color: #0f0b0b;
-    text-decoration: none;
-    margin: 0 5px;
-    
-  }
-  
-  .formulario {
+.footer-bottom {
     text-align: center;
-    margin-top: 50px;
-    background-image: linear-gradient(1deg, rgba(243, 60, 60, 0.767), transparent 25%, rgba(204, 63, 63, 0.945));
-  }
-  
-  .formulario input {
-    width: 200px;
-    padding: 10px;
-    margin: 10px;
-    border: none;
-    border-bottom: 2px solid #fff;
-    background: transparent;
-    color: #fff;
-    
-  }
-  
-  .formulario button {
-    background-color: #f00; /* Red color */
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-  }
-
+    color: #aaa;
+    font-size: 0.9rem;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}

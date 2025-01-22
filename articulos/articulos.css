@@ -88,45 +88,41 @@ header {
     box-shadow: 0 4px 15px rgba(255, 75, 43, 0.3);
 }
 
-.footer {
+/* Footer */
+footer {
     background: #111;
-    padding: 3rem 0;
-    margin-top: 4rem;
+    padding: 40px 20px;
+    margin-top: 60px;
 }
 
-.footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 2rem;
-    color: white;
+.social-section {
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 .social-links {
     display: flex;
-    gap: 1rem;
+    justify-content: center;
+    gap: 20px;
 }
 
 .social-links img {
-    width: 30px;
-    height: 30px;
-    transition: transform 0.3s;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
 }
 
 .social-links img:hover {
     transform: scale(1.1);
 }
 
-.footer a {
-    color: #f00;
-    text-decoration: none;
-}
-
 .footer-bottom {
     text-align: center;
-    padding-top: 2rem;
-    border-top: 1px solid rgb(255, 255, 255);
-    color: white;
+    color: #aaa;
+    font-size: 0.9rem;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 /* Responsive */
